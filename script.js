@@ -4,12 +4,12 @@ function putMark(squareQuerySelector)
     {
         if (turn == 0 || turn == 2 || turn ==  4|| turn == 6 || turn == 8)                          //the cell
         {
-            turnMessage = turnMessageQuerySelector.innerHTML = "Tour de X"
+            turnMessage = turnMessageQuerySelector.innerHTML = "X turn"
             squareQuerySelector.innerHTML = player1Mark
         }
         else
         {
-            turnMessage = turnMessageQuerySelector.innerHTML = "Tour de O"            
+            turnMessage = turnMessageQuerySelector.innerHTML = "O turn"            
             squareQuerySelector.innerHTML = player2Mark   
         }
         turn++        
@@ -19,12 +19,12 @@ function putMark(squareQuerySelector)
     {
         if (turn == 0 || turn == 2 || turn ==  4|| turn == 6 || turn == 8)        
         {
-            turnMessage = turnMessageQuerySelector.innerHTML = "Tour de O"   
+            turnMessage = turnMessageQuerySelector.innerHTML = "O turn"   
             squareQuerySelector.innerHTML = player1Mark
         }
         else
         {
-            turnMessage = turnMessageQuerySelector.innerHTML = "Tour de X"
+            turnMessage = turnMessageQuerySelector.innerHTML = "X turn"
             squareQuerySelector.innerHTML = player2Mark  
         }        
         turn++
