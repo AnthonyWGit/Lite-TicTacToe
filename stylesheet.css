@@ -17,12 +17,13 @@
 {   
     background-color:#399fff;
     padding:20px;
-    border-radius:10px;
+    border-radius:5px;
     display:flex;
     align-items:center;
     justify-content:center;
     font-size:40px;
     font-family:sans-serif;
+    opacity: 0.7;
 }
 
 
@@ -34,8 +35,8 @@
     display:grid;
     grid-template-columns: 200px 200px 200px;
     grid-row: auto auto;
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
 }
 .gameHeader
 {
