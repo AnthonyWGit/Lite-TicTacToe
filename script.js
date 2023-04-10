@@ -1,6 +1,6 @@
 function putMark(squareQuerySelector)
 {
-    if (player1Mark == "X" && active == true)
+    if (player1Mark == "X" && active == true && (squareQuerySelector.innerHTML == "" ))
     {
         if (tour == 0 || tour == 2 || tour ==  4|| tour == 6 || tour == 8)        
         {
@@ -13,7 +13,7 @@ function putMark(squareQuerySelector)
         tour++        
         placeholder = placeholderSelector.innerHTML = tour
     }
-    else if (player1Mark == "O" && active == true)
+    else if (player1Mark == "O" && active == true && (squareQuerySelector.innerHTML == ""))
     {
         if (tour == 0 || tour == 2 || tour ==  4|| tour == 6 || tour == 8)        
         {
@@ -60,6 +60,8 @@ const xMarkQuery = squareQuerySelector.forEach(squareQuerySelector =>
     {
         squareQuerySelector.addEventListener("click", () => putMark(squareQuerySelector))
     })
+const cells = [...document.querySelectorAll(".square")]    
 const xButtonClick = xMarkQuerySelector.addEventListener("click", player1chooseX)
 const oButtonClick = oMarkQuerySelector.addEventListener("click", player1chooseO)
-let placeholder = placeholderSelector.innerHTML = tour
+console.log(cells)
+let placeholder
